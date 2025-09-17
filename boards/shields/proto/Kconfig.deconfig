@@ -1,7 +1,7 @@
 if SHIELD_PROTO
 
 # Name must be less than 16 characters long!
-config ZMK_PROTO
+config ZMK_KEYBOARD_NAME
     default "proto"
 
 endif
