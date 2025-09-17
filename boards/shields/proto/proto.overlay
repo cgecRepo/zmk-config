@@ -2,13 +2,18 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;    // Indica que este es el teclado principal
+        zmk,kscan = &kscan0;
     };
 
     key_matrix: key_matrix {
         compatible = "zmk,matrix-transform";
         rows = <3>;
         columns = <4>;
+        map = <
+            0 1 2 3
+            4 5 6 7
+            8 9 10 11
+        >;
     };
 
     kscan0: kscan {
