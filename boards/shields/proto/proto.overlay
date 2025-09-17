@@ -30,4 +30,14 @@
             RC(2,0) RC(2,1) RC(2,2) RC(2,3)
         >;
     };
+
+    default_kscan: kscan {
+        compatible = "zmk,kscan";
+        kscan = <&kscan0>;
+    };
+
+    default_layout: layout {
+        compatible = "zmk,layout";
+        layout = <&default_transform>;
+    };
 };
