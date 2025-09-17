@@ -1,0 +1,7 @@
+if SHIELD_PROTO
+
+# Name must be less than 16 characters long!
+config ZMK_PROTO
+    default "proto"
+
+endif
