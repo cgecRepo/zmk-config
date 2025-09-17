@@ -31,13 +31,14 @@
         >;
     };
 
-    default_kscan: kscan {
-        compatible = "zmk,kscan";
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
         kscan = <&kscan0>;
+        transform = <&default_transform>;
     };
 
-    default_layout: layout {
-        compatible = "zmk,layout";
-        layout = <&default_transform>;
+    chosen {
+        zmk,physical-layout = &physical_layout0;
     };
 };
